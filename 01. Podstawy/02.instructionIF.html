@@ -53,10 +53,23 @@
                 document.write("Wynik dzielenia to " + result);
             }
         }
+
+
         
         /*
-        *. Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i sprawdzi, czy są one równe. Wyświetl odpowiedni komunikat.
-        *. Napisz program, który poprosi użytkownika o podanie wieku i sprawdzi, czy osoba jest pełnoletnia. Wyświetl odpowiedni komunikat.*/
+        *. Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i sprawdzi, czy są one równe. Wyświetl odpowiedni komunikat.*/
+        function task7() {
+            var firsttotalnumber = 1
+            var secondtotalnumber = 1
+
+            if (firsttotalnumber == secondtotalnumber) {
+                document.write("Podane liczby calkowite sa rowne")
+            }
+            else {
+                document.write("Podane liczby ca;lpwote nie sa rowne")
+            }
+        }
+        /*. Napisz program, który poprosi użytkownika o podanie wieku i sprawdzi, czy osoba jest pełnoletnia. Wyświetl odpowiedni komunikat.*/
         function task5() {
             var numberFromUser = 19
 
@@ -67,8 +80,25 @@
                 document.write("Nie jesteś pełnoletni/a")
             }
         }
-        /*. Napisz program, który poprosi użytkownika o podanie liczby całkowitej i obliczy jej wartość bezwzględną. Wyświetl wynik.
-        *. Napisz program, który poprosi użytkownika o podanie liczby od 1 do 7 i wyświetli odpowiadający mu dzień tygodnia.*/
+        /*. Napisz program, który poprosi użytkownika o podanie liczby całkowitej i obliczy jej wartość bezwzględną. Wyświetl wynik.*/
+        function task8() {
+            var firsttotalnumber = 3
+            var secondtotalnumber = 1
+            
+            if (firsttotalnumber > secondtotalnumber) {
+                document.write(firsttotalnumber)
+            }
+            else if (secondtotalnumber > firsttotalnumber) {
+                document.write(secondtotalnumber)
+            }
+            else if (firsttotalnumber = secondtotalnumber) {
+                document.write("Podane liczby calkowite sa rowne")
+            }
+            else {
+                document.write("blad")
+            }
+        }
+        /*. Napisz program, który poprosi użytkownika o podanie liczby od 1 do 7 i wyświetli odpowiadający mu dzień tygodnia.*/
              function task6() {
         var firstnumber = 1
 
@@ -95,11 +125,12 @@
         }
         else document.write ("Podales zla liczbe")
        }
-        /*. Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i wyświetli większą z nich.
-        *. Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny. Wyświetl odpowiedni komunikat.
-        *. Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
+        //. Napisz program, który poprosi użytkownika o podanie dwóch liczb całkowitych i wyświetli większą z nich.
+        //. Napisz program, który poprosi użytkownika o podanie roku i sprawdzi, czy jest to rok przestępny. Wyświetl odpowiedni komunikat.
+        
+        //. Napisz program, który poprosi użytkownika o podanie liczby całkowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyświetl odpowiedni komunikat.
 
-        *. Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
+        /*. Napisz program, który poprosi użytkownika o podanie masy ciała (w kilogramach) i wzrostu (w metrach).
         Na  podstawie tych danych oblicz wskaźnik BMI (Body Mass Index) i wyświetl odpowiedni komunikat informujący o stanie zdrowia.
         poniżej 16 - wygłodzenie
         16 - 16.99 - wychudzenie
@@ -206,6 +237,9 @@
         //task4();
         //task5();
         //task6();
+        //task7();
+        //task8();
+        task9()
 
     </script>
 </body>
