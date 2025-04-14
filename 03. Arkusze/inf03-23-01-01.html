@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function calculate()
+        {
+            var area = document.getElementById("areaInput").value;
+            var howManyCans = Math.ceil(area / 4);
+            document.getElementById("result").innerText = "liczba potrzebnych puszek: " + howManyCans;
+        }
+    </script>
 </head>
 <body>
-    <div>Zapotrzebowanie na farbe</div>
+    <h2>Zapotrzebowanie na farbe</h2>
     <form>
         Powierzchnia malowania (m<supp>2</supp>):
         <input type="text"/>
         <input type="button" value="Policz"/>
     </form>
-<div></div>
+<div id="result"></div>
 
 </body>
 </html>
