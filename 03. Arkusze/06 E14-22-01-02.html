@@ -6,21 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    Podaj numer kawy:
-    <input type="number"> <br>
-    Podaj wagę w dekagramach:
-    <input type="number" id="firstnumber"> <br>
-    <input type="submit" value="Zamów" onclick="function1"> <br> <br>
-    Kosz zamówienia wynosi:
-
     <script>
-        function function1() {
-            var firstnumber = document.getElementById(firstnumber).value
-            var secondnumber = document.getElementById(secondnumber).value 
-            var endCost = "Koszt zamówienia wynosi: " +   + "zł"
+function koszt(){
+    let kawa = document.getElementById("kawa").value;
+    let waga = document.getElementById("waga").value;
+    let cena;
+    if (kawa == 1){
+        cena = 5;
+    }
+    else if (kawa == 2){
+        cena = 7;
+    }
+    else if (kawa == 4){
+        cena = 6;
+    }
+    else {
+        cena = 0;
+    }
 
-            if (firstnumber = 1)
-        }
+    let koszt = waga*cena;
+    document.getElementById('wynik').innerHTML = "Koszt zamówienia wynosi: " + koszt + " zł";
+}
     </script>
 </body>
 </html>
